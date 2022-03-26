@@ -288,9 +288,7 @@ ul{
 
 /* PRODUCTOS */
 body {
-        background-image: linear-gradient(to right, #82b1bdff , #114e5eff);
-
-}
+        background-image: linear-gradient(to right, #82b1bdff , #114e5eff);}
 
 header{ 
     background-color: #efe7dc;
