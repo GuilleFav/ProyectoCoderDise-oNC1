@@ -3,6 +3,7 @@
     padding: 0;
 } 
 
+/* Animacion */
 
 /* INDEX */
 .bodyIndex  {  
@@ -146,7 +147,7 @@ ul{
     padding: 5px 10px;
     margin: 10px 10px;
     border: solid 2px #897979ff;
-    background-color: #f0ba79ff;
+    background-color: #efe7dcb0;
     border-radius: 10px;
     list-style: none;
     max-height: 3rem;
@@ -286,6 +287,14 @@ ul{
 
 
 /* PRODUCTOS */
+body {
+        background-image: linear-gradient(to right, #82b1bdff , #114e5eff);
+
+}
+
+header{ 
+    background-color: #efe7dc;
+}
 .mainProductos {
     width: 90vw;
     height: auto;
@@ -304,7 +313,6 @@ ul{
         margin: 1rem;
     }
 
-
 .productos h2{
     display: flex;
     align-self: center;
@@ -313,11 +321,12 @@ ul{
     font-family: lora;
     color: #0d1417ff;
     margin-left:2rem ;
+    
 }
 
 
 
- /*    .productos li{
+/*    .productos li{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -333,7 +342,6 @@ ul{
             height:320px;
             overflow: hidden;
         }
-        
     .productos__sillones img{
             margin:10px auto;
             border-radius:5px;
@@ -537,10 +545,16 @@ ul{
 
 
 
-
-
-
-
+.paleta{color: --alabaster #f1ede2ff;
+            --alabaster-2: #e0e2d4ff;
+            --champagne: #f2e6cbff;
+            --pewter-blue: #82b1bdff;
+            --pewter-blue-2: #82adb2ff;
+            --midnight-green-eagle-green: #114e5eff;
+            --mellow-apricot: #f0ba79ff;
+            --charcoal: #2f3b46ff;
+            --rich-black-fogra-29: #0d1417ff;
+}
 
 
 

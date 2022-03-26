@@ -10,14 +10,18 @@
     <title>Interiores NC</title>
     <link href="../Imagenes/favicon.ico" rel="icon" type="image/x-icon" />
     <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
-<body >
+<body class="bodyProductos">
     <header>
         <div>
-            <a href="index.html"><img class="logoArriba" src="../Imagenes/nclogo.jpg" alt="LOGO" placeholder="NC Interiores"></a>
+            <a  href="index.html"><img class="logoArriba" src="../Imagenes/nclogo.jpg" alt="LOGO" placeholder="NC Interiores"></a>
         </div>
     </header>
-    <nav id="navegacion">
+    <nav class="animate__animated animate__lightSpeedInLeft" id="navegacion">
         <ul class="menu">
             <li><a href="../index.html">Home</a></li>
             <li><a href="../Paginas/proyectos.html">Proyectos</a></li>
@@ -125,5 +129,10 @@
         </div>
             
     </footer>
+    <script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+
 </body>
 </html>
