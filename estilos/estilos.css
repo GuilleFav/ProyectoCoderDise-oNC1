@@ -102,13 +102,15 @@ footer{
     
 }
 
-ul{
+.redes li{
     list-style: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-
+a{
+    text-decoration: none   ;
+}
 .logoAbajo--fit{
     display: grid;
     grid-area: logoAbajo;
@@ -405,7 +407,12 @@ header{
                 
             }
         
-
+.productos ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 
 
