@@ -15,21 +15,24 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
 </head>
-<body class="bodyProductos">
+<body class="bodyIndex container-fluid">
     <header>
-        <div>
-            <a  href="index.html"><img class="logoArriba" src="../Imagenes/nclogo.jpg" alt="LOGO" placeholder="NC Interiores"></a>
+        <div class="row">
+            <div class="logoArriba">
+                <a href="index.html"><img class="logoArriba" src="Imagenes\nclogo.jpg" alt="LOGO" placeholder="NC Interiores"></a>
+            </div>
+            <nav>
+                <nav class="nav nav-pills flex-column flex-sm-row">
+                    <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="Paginas/quienes-somos.html">Quienes somos</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="Paginas/productos.html">Productos</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="Paginas/proyectos.html">Proyectos</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="Paginas/contacto.html">Contacto</a>
+                    <!-- <a class="flex-sm-fill text-sm-center nav-link disabled">Disabled</a> -->
+                </nav>
+            </nav>
         </div>
     </header>
-    <nav class="animate__animated animate__lightSpeedInLeft" id="navegacion">
-        <ul class="menu">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../Paginas/proyectos.html">Proyectos</a></li>
-            <li><a href="../Paginas/productos.html">Productos en stock</a></li>
-            <li><a href="../Paginas/quienes-somos.html">Quienes somos</a></li>
-            <li><a href="../Paginas/contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
 
     <main class="mainProductos"> 
         <section class="productos">
