@@ -73,26 +73,31 @@ main .carousel img{
 }
 
 footer{
-    grid-area: footer;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    redes logoAbajo contacto;
-    justify-items: stretch;
-    align-items: stretch;
-    padding: 1rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+
 }
 
 .logoAbajo--fit{
-    grid-area: logoAbajo;
+    
+    align-self: flex-end;
+    justify-self: center;
 }
 .redes__icono{
     max-width: 32px;
     max-height: 32px;
     margin: 0.2rem;
 }
-
+.contacto{
+    background-color: #82adb2ff;
+    border: solid cornflowerblue 2px;
+    font-family: lora;
+    color: black;
+}
+.contacto a{
+    text-decoration: none;
+}
 .redes{
     grid-template-columns: redes;
     display: flex;
@@ -290,14 +295,31 @@ a{
 
 /* PRODUCTOS */
 .body {
-        background-image: linear-gradient(to right, #82b1bdff , #114e5eff);}
+        background-image: linear-gradient(to right, #82b1bdff , #114e5eff);
+    font-family: lora;
+    }
 
 .headerProductos{ 
     background-color: #efe7dc;
     max-width: 100vw;
-    max-height: 20vh;
+    max-height: 25vh;
     margin: 0;
     padding: 0;
+}
+
+.headerProyectos{
+    background-color: #efe7dc;
+    max-width: 100vw;
+    max-height: 30vh;
+    margin: 0 0 2rem  0;
+    padding: 0;
+    font-family: lora;
+    font-size: 1.5rem;
+    
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+        background-color: #82adb2ff;
+        max-height: 10vh;
 }
 /* .mainProductos {
     width: 90vw;
@@ -395,6 +417,10 @@ a{
             height:300px;
         }
 
+.nav_mio{
+    max-width: 100vw;
+    max-height: 25vh;
+}
 /* 
         @media screen and (max-width:480px) {
     
