@@ -72,24 +72,33 @@ main .carousel img{
     max-width: 90vw;
 }
 
-footer{
+ footer{
+    max-width: 100vw;
+    max-height: auto;
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
+    justify-content:space-between;
+    flex-wrap: wrap;
 
-}
+} */
 
 .logoAbajo--fit{
-    
+    max-width: 33%;
     align-self: flex-end;
     justify-self: center;
 }
+.redes ul{
+    max-width: 33%;
+}
+
 .redes__icono{
     max-width: 32px;
     max-height: 32px;
     margin: 0.2rem;
 }
 .contacto{
+    max-width: 33%;
+    max-height: auto;
     background-color: #82adb2ff;
     border: solid cornflowerblue 2px;
     font-family: lora;
@@ -213,23 +222,7 @@ a{
     .carousel{
         height: auto;
     }
-        footer{
-            grid-area: footer;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-areas: 
-            redes 
-            logoAbajo 
-            contacto;
-            justify-items: center   ;
-            align-items: stretch;
-            padding: 1rem;
-            }
-            .redes{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-            }
+        
 } 
 
 @media screen and (max-width:480px) {
@@ -283,23 +276,16 @@ a{
     .carousel{
         height: auto;
     }
-        footer{
-            display: flex;
-            max-width: 100vw;
-            flex-direction: column;
-            justify-items: center;
-            align-items: center
-        }
     }
 
 
 /* PRODUCTOS */
-.body {
+body {
         background-image: linear-gradient(to right, #82b1bdff , #114e5eff);
     font-family: lora;
     }
 
-.headerProductos{ 
+header{ 
     background-color: #efe7dc;
     max-width: 100vw;
     max-height: 25vh;
@@ -316,6 +302,16 @@ a{
     font-family: lora;
     font-size: 1.5rem;
     
+}
+
+.headerProductos{
+    background-color: #efe7dc;
+    max-width: 100vw;
+    max-height: 30vh;
+    margin: 0 0 2rem  0;
+    padding: 0;
+    font-family: lora;
+    font-size: 1.5rem;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
         background-color: #82adb2ff;
@@ -922,8 +918,10 @@ padding: 5px;
 }
 */
 
-/* QUIENES SOMOS 
-
+/* QUIENES SOMOS  */
+    .mainNosotros{
+    display: flex;
+    }
 .quienesSomos h3{
     font-family: lora;
     display: inline-block;
@@ -932,34 +930,36 @@ padding: 5px;
     text-decoration: underline double 2px;
 }
 
-.perfil div{
-    display: inline-block;
-    position: relative;
+.quienesSomos{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-items: center;
 }
 
-.perfil p{
-    max-width: 300px;
-    max-height: auto;
+./* perfil div{
     display: inline-block;
     position: relative;
-    right:0%;
-    top: 0%;
-    text-align: center;
+} */
+
+/*.perfil p{
+    max-width: 300px;
+    max-height: auto;
     font-family: lora;
     font-size: 1rem;
     color: #0d1417ff;
     background-color: #82b1bdff;
-}
+}*/
 
-.perfil img{
+.perfilimg img{
     width: 300px;
-    max-height: auto;
+    max-height: 3000px;
     margin: 5px;
     padding: 0px;
 }
 
+/*
 .iframeMapa {
-    display: block;
+   /*  display: block; 
     max-width: 300px;
     max-height: auto;
     position: relative;
@@ -968,8 +968,8 @@ padding: 5px;
 }
 
 .publicidad div{
-    display: inline-block;
-    position: fixed;
+   /*  display: inline-block;
+    position: fixed; 
     right: 0px;
     top: 235px;
     max-width: 200px;
@@ -978,7 +978,7 @@ padding: 5px;
     overflow: hidden;
     font-family: lora;
     font-size: small;
-}
+} */
 
 /* CONTACTO----------------------------------------------*
 .formulario_contacto fieldset{
@@ -1074,12 +1074,12 @@ padding: 5px;
     font-family: lora;
     font-size: 1.2rem;
     font-weight: 600;
-} */
+} 
 
 
 
-/*class se llama con .*/
-/* .parrafo_rojo{
+/*class se llama con .
+.parrafo_rojo{
     color: red;
 }
 
@@ -1111,31 +1111,4 @@ h3{color: fuchsia;}
 dsd */
 
 
-/* 
-.proyectos_video--hover1{
-    position:relative
-}
-.descripcion_proyecto {
-    display: none;
-    border: solid 2px #82adb2ff;
-    max-width: 600px;
-    max-height: 400px;
-    margin: 10px;
-    padding: 2px;
-    position: absolute;
-    top: 10%;
-    left: 0%;
-    margin: 10px;
-    overflow: none;
-}
 
-.descripcion_proyecto iframe{
-    font-family: lora;
-    color: #2f3b46ff;
-    font-size: 1rem;
-    background-color: rgba(242, 230, 203, 0.562) ;
-}
-
-.proyectos_video--hover1:hover .descripcion_proyecto{
-    display:block;}
- */
