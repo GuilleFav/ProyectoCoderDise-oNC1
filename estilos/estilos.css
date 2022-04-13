@@ -440,7 +440,29 @@ header{
     flex-wrap: wrap;
 }
 
+/* QUIENES SOMOS  */
+.mainNosotros{
+    display: flex;
+    }
+.quienesSomos h3{
+    font-family: lora;
+    display: inline-block;
+    margin: 5px 10px;
+    color: #0d1417ff;
+    text-decoration: underline double 2px;
+}
 
+.quienesSomos{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-items: center;
+}
+.perfilimg img{
+    width: 300px;
+    max-height: 3000px;
+    margin: 5px;
+    padding: 0px;
+}
 
 
 
@@ -918,48 +940,26 @@ padding: 5px;
 }
 */
 
-/* QUIENES SOMOS  */
-    .mainNosotros{
-    display: flex;
-    }
-.quienesSomos h3{
-    font-family: lora;
-    display: inline-block;
-    margin: 5px 10px;
-    color: #0d1417ff;
-    text-decoration: underline double 2px;
-}
 
-.quienesSomos{
-    flex-direction: row;
-    align-items: flex-start;
-    justify-items: center;
-}
-
-./* perfil div{
+/* perfil div{
     display: inline-block;
     position: relative;
-} */
+} 
 
-/*.perfil p{
+.perfil p{
     max-width: 300px;
     max-height: auto;
     font-family: lora;
     font-size: 1rem;
     color: #0d1417ff;
     background-color: #82b1bdff;
-}*/
-
-.perfilimg img{
-    width: 300px;
-    max-height: 3000px;
-    margin: 5px;
-    padding: 0px;
 }
 
-/*
+
+
+
 .iframeMapa {
-   /*  display: block; 
+display: block; 
     max-width: 300px;
     max-height: auto;
     position: relative;
@@ -968,7 +968,7 @@ padding: 5px;
 }
 
 .publicidad div{
-   /*  display: inline-block;
+display: inline-block;
     position: fixed; 
     right: 0px;
     top: 235px;
@@ -978,9 +978,9 @@ padding: 5px;
     overflow: hidden;
     font-family: lora;
     font-size: small;
-} */
+} 
 
-/* CONTACTO----------------------------------------------*
+CONTACTO----------------------------------------------
 .formulario_contacto fieldset{
     display: block;
 }
@@ -1078,7 +1078,7 @@ padding: 5px;
 
 
 
-/*class se llama con .
+class se llama con .
 .parrafo_rojo{
     color: red;
 }
